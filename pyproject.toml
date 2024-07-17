@@ -1,0 +1,27 @@
+[project]
+name = "llm-interpolate"
+version = "0.1"
+description = "LLM plugin for interpolating between embeddings"
+readme = "README.md"
+authors = [{name = "Evangelos Lamprou"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm>=0.9",
+    "numpy",
+    "scipy",
+]
+
+[project.urls]
+Homepage = "https://github.com/vagos/llm-interpolate"
+Changelog = "https://github.com/vagos/llm-interpolate/releases"
+Issues = "https://github.com/vagos/llm-interpolate/issues"
+CI = "https://github.com/vagos/llm-interpolate/actions"
+
+[project.entry-points.llm]
+interpolate = "llm_interpolate"
+
+[project.optional-dependencies]
+test = ["pytest"]
